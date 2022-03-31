@@ -41,6 +41,12 @@ form button {
   outline: none;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
+.todo-input {
+  height: 34px;
+}
+.date-input {
+  height: 34px;
+}
 
 form button {
   color: rgb(30, 144, 255);
@@ -69,8 +75,9 @@ form button:hover {
   background: white;
   font-size: 1rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  width: 500px;
 }
 
 .todo li {
@@ -92,9 +99,15 @@ form button:hover {
   background: #6bdb4f;
 }
 
-.todo-item {
+.todo-item,
+.date-input {
   padding: 0.5rem;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); */
+}
+
+.new-date-input {
+  text-align: end;
+  margin-right: 15px;
 }
 
 fa-trash,
