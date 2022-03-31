@@ -2,6 +2,7 @@
 
 const title = document.querySelector(".title");
 const todoInput = document.querySelector(".todo-input");
+const todoInputDate = document.querySelector(".date-input");
 const todoList = document.querySelector(".todo-list");
 const todoButton = document.querySelector(".todo-button");
 const completeButton = document.querySelector(".complete-btn");
@@ -24,10 +25,17 @@ function addTodo(event) {
   const todoDiv = document.createElement("div");
   todoDiv.classList.add("todo");
 
+  // li text created
   const newTodo = document.createElement("li");
   newTodo.innerText = todoInput.value;
   newTodo.classList.add("todo-item");
   todoDiv.appendChild(newTodo);
+
+  // li date created
+  const newDate = document.createElement("li");
+  newDate.innerHTML = todoInputDate.value;
+  newDate.classList.add("new-date-input");
+  todoDiv.appendChild(newDate);
 
   //Check mark
   const completedButton = document.createElement("button");
@@ -36,7 +44,7 @@ function addTodo(event) {
   completedButton.classList.add("complete-btn");
   todoDiv.appendChild(completedButton);
 
-  //Delete mark
+  //Delete button creation
   const deleteButton = document.createElement("button");
   // innerHTML is going to add to the button the i tag that is inside
   deleteButton.innerHTML = '<i class="fas fa-trash"></i>';
@@ -45,8 +53,10 @@ function addTodo(event) {
 
   //Append to the list
   todoList.appendChild(todoDiv);
+
   //Clear todo input value after adding list items
   todoInput.value = "";
+  todoInputDate.value = "";
 }
 
 function deleteCheck(event) {
