@@ -22,37 +22,37 @@ function addTodo(event) {
     return;
   }
 
-  const todoDiv = document.createElement("div");
-  todoDiv.classList.add("todo");
+  const todoLi = document.createElement("li");
+  todoLi.classList.add("todo");
 
   // li text created
-  const newTodo = document.createElement("li");
+  const newTodo = document.createElement("div");
   newTodo.innerText = todoInput.value;
   newTodo.classList.add("todo-item");
-  todoDiv.appendChild(newTodo);
+  todoLi.appendChild(newTodo);
 
   // li date created
-  const newDate = document.createElement("li");
+  const newDate = document.createElement("div");
   newDate.innerHTML = todoInputDate.value;
   newDate.classList.add("new-date-input");
-  todoDiv.appendChild(newDate);
+  todoLi.appendChild(newDate);
 
   //Check mark
   const completedButton = document.createElement("button");
   // innerHTML is going to add to the button the i tag that is inside
   completedButton.innerHTML = '<i class="fas fa-check"></i>';
   completedButton.classList.add("complete-btn");
-  todoDiv.appendChild(completedButton);
+  todoLi.appendChild(completedButton);
 
   //Delete button creation
   const deleteButton = document.createElement("button");
   // innerHTML is going to add to the button the i tag that is inside
   deleteButton.innerHTML = '<i class="fas fa-trash"></i>';
   deleteButton.classList.add("trash-btn");
-  todoDiv.appendChild(deleteButton);
+  todoLi.appendChild(deleteButton);
 
   //Append to the list
-  todoList.appendChild(todoDiv);
+  todoList.appendChild(todoLi);
 
   //Clear todo input value after adding list items
   todoInput.value = "";
@@ -69,7 +69,9 @@ function deleteCheck(event) {
 
   // check mark on item
   if (item.classList[0] === "complete-btn") {
-    const todo = item.parentElement;
-    todo.classList.toggle("completed");
+    const todoTask = item.parentElement.childNodes[0];
+    todoTask.classList.toggle("completed");
+    const todoDate = item.parentElement.childNodes[1];
+    todoDate.classList.toggle("completed");
   }
 }
