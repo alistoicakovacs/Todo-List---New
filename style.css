@@ -41,11 +41,17 @@ form button {
   outline: none;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
+
 .todo-input {
   height: 34px;
 }
+
 .date-input {
   height: 34px;
+}
+
+button i {
+  pointer-events:none;
 }
 
 form button {
@@ -82,7 +88,6 @@ form button:hover {
 
 .todo div {
   /* Pushes the two icons together*/
-
   flex: 1;
 }
 
