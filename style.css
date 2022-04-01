@@ -80,7 +80,7 @@ form button:hover {
   width: 500px;
 }
 
-.todo li {
+.todo div {
   /* Pushes the two icons together*/
 
   flex: 1;
