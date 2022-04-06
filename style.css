@@ -79,7 +79,7 @@ form button:hover {
 .todo {
   margin: 0.5rem;
   background: white;
-  font-size: 1rem;
+  font-size: 14px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -128,6 +128,9 @@ fa-plus {
 @media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 4) {
   .todo {
     width: 100%;
-    font-size: smaller;
+    font-size: 12px;
+  }
+  .complete-btn {
+    padding: 1.2rem;
   }
 }
