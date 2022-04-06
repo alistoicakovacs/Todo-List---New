@@ -124,3 +124,10 @@ fa-plus {
   text-decoration: line-through;
   opacity: 0.5;
 }
+
+@media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 4) {
+  .todo {
+    width: 100%;
+    font-size: smaller;
+  }
+}
