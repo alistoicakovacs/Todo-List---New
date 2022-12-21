@@ -26,10 +26,11 @@ header {
 
 header,
 form {
-  min-height: 25vh;
+  /* min-height: 25vh; */
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 form input,
@@ -40,6 +41,15 @@ form button {
   background: white;
   outline: none;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+input {
+  border-radius: 5px;
+  margin:5px;
+}
+
+button {
+  border-radius: 5px;
 }
 
 .todo-input {
@@ -84,6 +94,8 @@ form button:hover {
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding:2px;
+  border-radius: 5px;
 }
 
 .todo div {
@@ -98,6 +110,8 @@ form button:hover {
   border: none;
   padding: 1rem;
   cursor: pointer;
+  margin:5px;
+  
 }
 
 .complete-btn {
