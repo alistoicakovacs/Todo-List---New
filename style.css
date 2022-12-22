@@ -82,8 +82,13 @@ form button:hover {
 }
 
 .todo-list {
-  min-width: 30%;
+  min-width: 50%;
+  height: 50vh;  
   list-style: none;
+  background-color: white;
+  padding:20px;
+  margin-top:10px;
+  border-radius: 5px;
 }
 
 .todo {
@@ -95,7 +100,8 @@ form button:hover {
   align-items: center;
   width: 100%;
   padding:2px;
-  border-radius: 5px;
+  
+  border-bottom:0.3px solid gray;
 }
 
 .todo div {
