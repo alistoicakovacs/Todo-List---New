@@ -13,9 +13,21 @@ body {
     rgba(182, 218, 223, 1) 41%,
     rgba(77, 147, 176, 1) 100%
   );
+
   height: 100vh;
   min-height: 100vh;
-  padding: 1rem;
+  /* padding: 1rem; */
+}
+
+.overlay {
+  height: 100vh;
+  width: 100vh;
+  position: absolute;
+  background-color: gray;
+  opacity: 0.5;
+  padding: 0;
+  margin: 0;
+  z-index: -1;
 }
 
 header {
