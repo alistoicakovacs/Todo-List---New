@@ -21,7 +21,7 @@ body {
 
 .overlay {
   height: 100vh;
-  width: 100vh;
+  width: 100%;
   position: absolute;
   background-color: gray;
   opacity: 0.5;
