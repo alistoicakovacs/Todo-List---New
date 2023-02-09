@@ -88,6 +88,7 @@ form button:hover {
 }
 
 .container {
+  margin-top:30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,6 +102,7 @@ form button:hover {
   padding:20px;
   margin-top:10px;
   border-radius: 5px;
+  box-shadow: 1px 0px 5px grey
 }
 
 .todo {
@@ -113,7 +115,9 @@ form button:hover {
   width: 100%;
   padding:2px;
   
-  border-bottom:0.3px solid gray;
+  border-bottom:1px solid gray;
+  border-radius: 5px;
+  box-shadow: 1px 2px 5px;
 }
 
 .todo div {
