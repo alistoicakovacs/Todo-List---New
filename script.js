@@ -73,5 +73,6 @@ function deleteCheck(event) {
     todoTask.classList.toggle("completed");
     const todoDate = item.parentElement.childNodes[1];
     todoDate.classList.toggle("completed");
+    completeButton.classList.add('faded')
   }
 }

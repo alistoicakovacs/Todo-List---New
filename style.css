@@ -94,6 +94,22 @@ form button:hover {
   align-items: center;
 }
 
+.todo-deleted {
+  height:600px;
+  width:400px;
+  background-color: white;
+  margin-left:30px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.title-container {
+    text-align: center;
+    text-decoration: underline;
+    padding:10px;
+}
+
+
 .todo-list {
   min-width: 50%;
   height: 50vh;  
@@ -102,7 +118,7 @@ form button:hover {
   padding:20px;
   margin-top:10px;
   border-radius: 5px;
-  box-shadow: 1px 0px 5px grey
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .todo {
@@ -114,10 +130,8 @@ form button:hover {
   align-items: center;
   width: 100%;
   padding:2px;
-  
-  border-bottom:1px solid gray;
   border-radius: 5px;
-  box-shadow: 1px 2px 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .todo div {
@@ -169,4 +183,8 @@ fa-plus {
   .complete-btn {
     padding: 1.2rem;
   }
+}
+
+.faded {
+  opacity:0.5;
 }
